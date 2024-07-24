@@ -21,7 +21,7 @@ public class P3_30802_WelcomeKit {
 
         for (int i = 0; i < size.length; i++) {
             tBundleCount += size[i] / T;
-            if (size[i] != 0 && T != 1 && size[i] != T) {
+            if (size[i] != 0 && T != 1 && size[i] % T != 0) {
                 tBundleCount++;
             }
 
